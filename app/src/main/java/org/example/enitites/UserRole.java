@@ -1,15 +1,15 @@
 package org.example.enitites;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @Entity
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "role")
+@Getter
+@Setter
 public class UserRole {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

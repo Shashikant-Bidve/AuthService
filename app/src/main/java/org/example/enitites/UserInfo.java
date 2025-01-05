@@ -1,10 +1,7 @@
 package org.example.enitites;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
+import lombok.*;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -15,9 +12,11 @@ import java.util.Set;
 @AllArgsConstructor
 @Table(name = "users")
 @ToString
+@Getter
+@Setter
 public class UserInfo {
 
-    public String userName;
+    public String username;
 
     @Id
     @Column(name = "user_id")
