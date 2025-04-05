@@ -1,0 +1,12 @@
+Start point :
+Design LLD & HLD for api and DB
+
+Code start:
+1.) initialize grade springboot project
+2.) install dependencies
+3.) start from defining entities, then creating services (business logic), repository (perform CRUD operations and custom queries), models (DTO used for request, response)
+
+
+
+Learnings :
+Filters are similar to middlewares (act on HTTPServelet request before becoming HTTP request)

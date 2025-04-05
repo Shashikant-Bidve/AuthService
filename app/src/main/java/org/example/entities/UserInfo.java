@@ -1,4 +1,4 @@
-package org.example.enitites;
+package org.example.entities;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -12,8 +12,6 @@ import java.util.Set;
 @AllArgsConstructor
 @Table(name = "users")
 @ToString
-@Getter
-@Setter
 public class UserInfo {
 
     public String username;

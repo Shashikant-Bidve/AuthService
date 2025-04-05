@@ -1,4 +1,4 @@
-package org.example.enitites;
+package org.example.entities;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -8,8 +8,6 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "role")
-@Getter
-@Setter
 public class UserRole {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
