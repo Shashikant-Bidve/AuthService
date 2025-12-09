@@ -14,11 +14,11 @@ import java.util.Set;
 @ToString
 public class UserInfo {
 
-    public String username;
-
     @Id
     @Column(name = "user_id")
     public String userId;
+
+    public String username;
 
     public String password;
 
@@ -28,6 +28,5 @@ public class UserInfo {
             joinColumns = @JoinColumn(name = "user_id"),
             inverseJoinColumns = @JoinColumn(name = "role_id")
     )
-
     private Set<UserRole> roles = new HashSet<>();
 }
